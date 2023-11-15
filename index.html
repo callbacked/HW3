@@ -1,0 +1,41 @@
+<!--
+GUI Assignment: Homework 3
+Date: 11/07/2023
+Name: Alexander Vasquez Romero Jr
+Email: alexander_vasquez1@student.uml.edu
+Description: My index.html file, used for my main page of my website
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🔢 Multiplication Table Generator</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"> <!--linked external css-->
+</head>
+<body>
+    <form id="tableForm"> <!-- Created a form for user input-->
+        <label for="multiplierStart">Multiplier Start - Minimum Column (Y) Value:</label>
+        <input type="number" id="multiplierStart" name="multiplierStart" required>
+
+        <label for="multiplierEnd">Multiplier End - Maximum Column (Y) Value:</label>
+        <input type="number" id="multiplierEnd" name="multiplierEnd" required>
+
+        <label for="multiplicandStart">Multiplicand Start - Minimum Row (X) Value:</label>
+        <input type="number" id="multiplicandStart" name="multiplicandStart" required>
+
+        <label for="multiplicandEnd">Multiplicand End - Maximum Row (X) Value:</label>
+        <input type="number" id="multiplicandEnd" name="multiplicandEnd" required>
+
+        <input type="button" value="Generate Table" onclick="generateTable()"> <!--Button element that activates my JS function-->
+    </form>
+    <div id="tableContainer"></div> <!--Div made to contain the generated table-->
+    <div id="errorMessage"></div>
+    <script src="script.js"></script> <!--linked external JS-->
+</body>
+</html>
+
+<!--
+Cited:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+https://www.w3schools.com/css/css_howto.asp
+https://www.w3schools.com/tags/att_script_src.asp
+-->
