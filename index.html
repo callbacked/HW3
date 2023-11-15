@@ -13,16 +13,16 @@ Description: My index.html file, used for my main page of my website
 </head>
 <body>
     <form id="tableForm"> <!-- Created a form for user input-->
-        <label for="multiplierStart">Multiplier Start - Minimum Column (Y) Value:</label>
+        <label for="multiplierStart">Multiplier Start - Minimum Row (X) Value:</label>
         <input type="number" id="multiplierStart" name="multiplierStart" required>
 
-        <label for="multiplierEnd">Multiplier End - Maximum Column (Y) Value:</label>
+        <label for="multiplierEnd">Multiplier End - Maximum Row (X) Value:</label>
         <input type="number" id="multiplierEnd" name="multiplierEnd" required>
 
-        <label for="multiplicandStart">Multiplicand Start - Minimum Row (X) Value:</label>
+        <label for="multiplicandStart">Multiplicand Start - Minimum Column (Y) Value:</label>
         <input type="number" id="multiplicandStart" name="multiplicandStart" required>
 
-        <label for="multiplicandEnd">Multiplicand End - Maximum Row (X) Value:</label>
+        <label for="multiplicandEnd">Multiplicand End - Maximum Column (Y) Value:</label>
         <input type="number" id="multiplicandEnd" name="multiplicandEnd" required>
 
         <input type="button" value="Generate Table" onclick="generateTable()"> <!--Button element that activates my JS function-->
